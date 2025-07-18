@@ -1,11 +1,11 @@
 {
     "builds": [{
-        "src": "miniappbakend/wsgi.py",
+        "src": "miniappbackend/wsgi.py",
         "use": "@vercel/python",
         "config": {"maxLambdaSize": "15mb", "runtime": "Python3.13.0"}
     }],
     "routes": [{
         "src": "/(.*)",
-        "dest": "miniappbakend/wsgi.py"
+        "dest": "miniappbackend/wsgi.py"
     }]
 }
